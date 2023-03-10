@@ -32,8 +32,7 @@ class DeepModel:
             Class of keras model with weights.
         '''
         config = tf.compat.v1.ConfigProto()
-        config.gpu_options.per_process_gpu_memory_fraction = 0.40  # dynamically grow the memory used on the GPU
-        #config.device_count['CPU'] = 1
+        config.gpu_options.per_process_gpu_memory_fraction = 0.40
         sess = tf.compat.v1.Session(config=config)
         tf.compat.v1.keras.backend.set_session(sess)
         base_model = MobileNet(weights='imagenet', include_top=False, input_shape=(224, 224, 3))

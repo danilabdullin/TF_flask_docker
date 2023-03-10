@@ -47,7 +47,6 @@ class ImageClassifier(DeepModel):
                f'time spent for picture: {step_time}'
 
 
-           #f'Pic name: {answer[3]}', \
 
 
     def add_img(self, img_path, id_img):
@@ -115,17 +114,3 @@ class ImageClassifier(DeepModel):
 
         return json_res
 
-
-# if __name__ == "__main__":
-#     path = './data'
-#     classifier = ImageClassifier()
-#     classifier.learn(path)
-#
-#     path_test = './test_imgs'
-#     for dirpath, dirnames, filenames in os.walk(path_test):
-#         for file in filenames:
-#             image_path = os.path.join(dirpath, file).replace('\\', '//')
-#
-#             print(classifier.predict(image_path))
-#
-#     print(classifier.get_classes())
