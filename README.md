@@ -3,7 +3,7 @@
 
 ## About
 
-This project implements a metric learning algorithm for image classification based on pretrainded mobilenet. All this works through a minimal interface implemented on the flask in the docker.
+This project implements a metric learning algorithm for image classification based on pretrainded mobilenet. Programm works through a minimal interface using flask and docker.
  
 ## Installation
 
