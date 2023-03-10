@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="http://127.0.0.1:8000" class="nav-link active" aria-current="page">Загрузка данных</a></li>
+        <li class="nav-item"><a href="http://127.0.0.1:8000/predict" class="nav-link">Предсказание по картинке</a></li>
+      </ul>
+    </header>
+<head>
+    <title>File Upload</title>
+</head>
+<body>
+    <h1>Выберите картинку</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
